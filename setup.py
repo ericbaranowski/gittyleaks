@@ -13,13 +13,13 @@ setup(name = 'gittyleaks',
       author_email = 'kootenpv@gmail.com',
       license = 'GPL',
       packages = ['gittyleaks'],
-      install_requires = [ 
-          'scandir', 'sh'
-      ], 
-      entry_points = { 
-          'console_scripts': ['gittyleaks = gittyleaks.gittyleaks:main'] 
+      install_requires = [
+          'scandir~1.9.0', 'sh~1.12.14'
+      ],
+      entry_points = {
+          'console_scripts': ['gittyleaks = gittyleaks.gittyleaks:main']
       },
-      classifiers = [ 
+      classifiers = [
           'Environment :: Console',
           'Intended Audience :: Developers',
           'Intended Audience :: Customer Service',
@@ -29,19 +29,19 @@ setup(name = 'gittyleaks',
           'Operating System :: MacOS :: MacOS X',
           'Operating System :: Unix',
           'Operating System :: POSIX',
-          'Programming Language :: Python', 
+          'Programming Language :: Python',
           'Programming Language :: Python :: 2.7',
-          'Programming Language :: Python :: 3', 
+          'Programming Language :: Python :: 3',
           'Programming Language :: Python :: 3.3',
           'Programming Language :: Python :: 3.4',
-          'Topic :: Software Development', 
+          'Topic :: Software Development',
           'Topic :: Software Development :: Build Tools',
-          'Topic :: Software Development :: Debuggers', 
+          'Topic :: Software Development :: Debuggers',
           'Topic :: Software Development :: Libraries',
           'Topic :: Software Development :: Libraries :: Python Modules',
-          'Topic :: System :: Software Distribution', 
+          'Topic :: System :: Software Distribution',
           'Topic :: System :: Systems Administration',
           'Topic :: Utilities'
-    ], 
+    ],
     zip_safe = False,
     platforms='any')
